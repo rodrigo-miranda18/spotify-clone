@@ -4,13 +4,7 @@
     "es2020": true,
     "node": true
   },
-  "plugins": [
-    "react",
-    "@typescript-eslint",
-    "prettier",
-    "eslint-plugin-import",
-    "eslint-plugin-import-helpers"
-  ],
+  "plugins": ["react", "@typescript-eslint", "prettier"],
   "extends": [
     "prettier/prettier",
     "plugin:react/recommended",
@@ -31,20 +25,6 @@
     "prettier/prettier": "error",
     "react/prop-types": "off",
     "arrow-parens": [2, "as-needed"],
-    "no-useless-constructor": "off",
-    "import/no-extraneous-dependencies": "off",
-    "import/no-duplicates": ["error", { "considerQueryString": true }],
-    "import-helpers/order-imports": [
-      "warn",
-      {
-        "newlinesBetween": "always",
-        "groups": [
-          ["module", "absolute"],
-          "/^@/",
-          ["parent", "sibling", "index"]
-        ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
-      }
-    ]
+    "no-useless-constructor": "off"
   }
 }
