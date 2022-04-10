@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, fontSizes } from 'styles/variables';
 
-export const Sidebar = styled.aside`
+export const DesktopSidebar = styled.aside`
   background: ${colors.black};
   display: none;
   flex-direction: column;

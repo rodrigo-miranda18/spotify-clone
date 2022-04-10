@@ -9,6 +9,7 @@ export const colors = {
 };
 
 export const fontSizes = {
+  cap: '0.6875rem',
   small: '0.875rem',
   medium: '1rem',
   large: '1.5rem',

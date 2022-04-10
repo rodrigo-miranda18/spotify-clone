@@ -5,6 +5,7 @@ import Library from './Icons/Library';
 import Search from './Icons/Search';
 import Create from './Icons/Create';
 import Heart from './Icons/Heart';
+import Spotify from './Icons/Spotify';
 
 export type Props = {
   icon: string;
@@ -21,6 +22,7 @@ const Icon = (props: Props) => {
     search: <Search {...props} />,
     create: <Create />,
     heart: <Heart />,
+    spotify: <Spotify {...props} />,
     default: <></>,
   };
 
