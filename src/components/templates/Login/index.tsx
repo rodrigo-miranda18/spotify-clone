@@ -12,7 +12,7 @@ const Login = () => {
   return (
     <S.Page>
       <S.LogoWrapper>
-        <SpotifyLogo color={colors.green} width="100%" />
+        <SpotifyLogo color={colors.green} width="100%" height="auto" />
       </S.LogoWrapper>
       <S.ButtonWrapper>
         <TextButton

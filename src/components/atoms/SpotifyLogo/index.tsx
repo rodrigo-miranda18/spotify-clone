@@ -3,14 +3,15 @@ import React from 'react';
 type Props = {
   color: string;
   width: string;
+  height: string;
 };
 
-const SpotifyLogo = ({ color, width }: Props) => {
+const SpotifyLogo = ({ color, width, height }: Props) => {
   return (
     <svg
       fill={color}
       width={width}
-      height="auto"
+      height={height}
       viewBox="0 0 123 37"
       xmlns="http://www.w3.org/2000/svg"
     >
