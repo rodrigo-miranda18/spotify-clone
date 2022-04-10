@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+
+import { api } from 'services/api';
 
 import SpotifyLogo from 'components/atoms/SpotifyLogo';
 import SidebarItem from 'components/molecules/SidebarItem';
@@ -7,6 +9,8 @@ import SidebarItem from 'components/molecules/SidebarItem';
 import * as S from './styles';
 
 const Sidebar = () => {
+  const [playlists, setPlaylists] = useState([]);
+
   const items = [
     {
       id: 1,
@@ -40,6 +44,16 @@ const Sidebar = () => {
     },
   ];
 
+  useEffect(() => {
+    (async () => {
+      const { status, data } = await api.get('/api/playlists');
+
+      if (status === 200) {
+        setPlaylists(data.items);
+      }
+    })();
+  }, []);
+
   return (
     <S.Sidebar>
       <Link href="/" passHref>
@@ -58,16 +72,13 @@ const Sidebar = () => {
         ))}
       </S.Items>
       <S.Playlists>
-        <S.PlaylistItem>
-          <Link href="/" passHref>
-            <S.PlaylistItemLink>Rap Nacional e MPB</S.PlaylistItemLink>
-          </Link>
-        </S.PlaylistItem>
-        <S.PlaylistItem>
-          <Link href="/" passHref>
-            <S.PlaylistItemLink>Rock(s)</S.PlaylistItemLink>
-          </Link>
-        </S.PlaylistItem>
+        {playlists.map(playlist => (
+          <S.PlaylistItem key={playlist.id}>
+            <Link href={`/playlist/${playlist.id}`} passHref>
+              <S.PlaylistItemLink>{playlist.name}</S.PlaylistItemLink>
+            </Link>
+          </S.PlaylistItem>
+        ))}
       </S.Playlists>
     </S.Sidebar>
   );
