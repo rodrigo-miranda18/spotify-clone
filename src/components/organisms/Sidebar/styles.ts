@@ -34,12 +34,13 @@ export const Playlists = styled.ul`
 `;
 
 export const PlaylistItem = styled.li`
-  padding: 5px 0;
+  padding: 6.5px 0;
 `;
 
 export const PlaylistItemLink = styled.a`
   color: ${colors.grey};
   cursor: default;
+  font-family: 'Circular Std Book';
   font-size: ${fontSizes.small};
   text-decoration: none;
 

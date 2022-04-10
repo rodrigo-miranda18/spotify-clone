@@ -26,6 +26,5 @@ export const Link = styled.a<LinkProps>`
 
 export const Title = styled.h4`
   font-size: ${fontSizes.small};
-  font-weight: 700;
   margin-left: 16px;
 `;
