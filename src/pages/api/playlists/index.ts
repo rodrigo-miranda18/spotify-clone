@@ -16,10 +16,10 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       params,
     });
 
-    res.status(200).json(response.data);
+    return res.status(200).json(response.data);
   } catch (error) {
     const { status, message } = error.response.data.error;
 
-    res.status(status).json({ message });
+    return res.status(status).json({ message });
   }
 };
