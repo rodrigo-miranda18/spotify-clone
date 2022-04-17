@@ -3,5 +3,6 @@ import { colors } from 'styles/variables';
 
 export const Page = styled.div`
   background: ${colors.dark};
-  height: 100vh;
+  display: flex;
+  width: 100%;
 `;
