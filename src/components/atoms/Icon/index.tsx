@@ -8,9 +8,12 @@ import Heart from './Icons/Heart';
 import Spotify from './Icons/Spotify';
 import ArrowLeft from './Icons/ArrowLeft';
 import ArrowRight from './Icons/ArrowRight';
+import ArrowUpRight from './Icons/ArrowUpRight';
 import Avatar from './Icons/Avatar';
 import Dropdown from './Icons/Dropdown';
 import TabLink from './Icons/TabLink';
+import Gear from './Icons/Gear';
+import Close from './Icons/Close';
 
 export type Props = {
   icon: string;
@@ -30,9 +33,12 @@ const Icon = (props: Props) => {
     spotify: <Spotify {...props} />,
     'arrow-left': <ArrowLeft {...props} />,
     'arrow-right': <ArrowRight {...props} />,
+    'arrow-up-right': <ArrowUpRight {...props} />,
     avatar: <Avatar {...props} />,
     dropdown: <Dropdown {...props} />,
     'tab-link': <TabLink {...props} />,
+    gear: <Gear {...props} />,
+    close: <Close {...props} />,
     default: <></>,
   };
 
