@@ -45,7 +45,7 @@ const Desktop = ({ data }: Props) => {
       id: 5,
       text: 'Músicas Curtidas',
       link: '',
-      icon: 'heart',
+      icon: 'liked-songs',
     },
   ];
 
@@ -62,7 +62,7 @@ const Desktop = ({ data }: Props) => {
             key={item.id}
             text={item.text}
             link={item.link}
-            icon={item.icon}
+            name={item.icon}
           />
         ))}
       </S.Items>

@@ -34,7 +34,7 @@ const Desktop = ({ children }: DesktopHeaderProps) => {
           onClick={goBackButtonIsActive ? goBack : null}
         >
           <Icon
-            icon="arrow-left"
+            name="arrow-left"
             color={goBackButtonIsActive ? '#FFF' : '#999999'}
           />
         </S.NavigationButton>
@@ -43,7 +43,7 @@ const Desktop = ({ children }: DesktopHeaderProps) => {
           onClick={goFowardButtonIsActive ? goForward : null}
         >
           <Icon
-            icon="arrow-right"
+            name="arrow-right"
             color={goFowardButtonIsActive ? '#FFF' : '#999999'}
           />
         </S.NavigationButton>
@@ -57,11 +57,11 @@ const Desktop = ({ children }: DesktopHeaderProps) => {
         active={dropdownIsActive}
       >
         <S.Avatar>
-          <Icon icon="avatar" color="white" width={14.4} height={16} />
+          <Icon name="avatar" color="white" width={14.4} height={16} />
         </S.Avatar>
         <S.Name>rodrigo120128</S.Name>
         <Icon
-          icon="dropdown"
+          name="dropdown"
           color="white"
           width={16}
           height={16}
@@ -78,7 +78,7 @@ const Desktop = ({ children }: DesktopHeaderProps) => {
             >
               <S.MenuItemName>Conta</S.MenuItemName>
               <Icon
-                icon="tab-link"
+                name="tab-link"
                 color="currentColor"
                 width={16}
                 height={16}

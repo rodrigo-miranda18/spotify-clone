@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { colors, fontSizes } from 'styles/variables';
 
 export const Button = styled.button`
-  background: ${colors.green};
+  background: ${colors.spotifyGreen};
   border: 0;
   border-radius: 50px;
   cursor: pointer;

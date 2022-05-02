@@ -7,12 +7,12 @@ import Icon from 'components/atoms/Icon';
 import * as S from './styles';
 
 type Props = {
-  icon: string;
+  name: string;
   text: string;
   link: string;
 };
 
-const SidebarItem = ({ icon, text, link }: Props) => {
+const SidebarItem = ({ name, text, link }: Props) => {
   const router = useRouter();
   const [active, setActive] = useState(false);
 
@@ -25,7 +25,7 @@ const SidebarItem = ({ icon, text, link }: Props) => {
       <Link href={link} passHref>
         <S.Link active={active}>
           <Icon
-            icon={icon}
+            name={name}
             width={24}
             height={24}
             color="currentColor"

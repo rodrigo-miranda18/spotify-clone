@@ -11,12 +11,12 @@ const Mobile = () => {
   return (
     <S.Nav>
       <S.IconWrapper onClick={() => setIsActive(!isActive)}>
-        <Icon icon="gear" color="white" width={24} height={24} />
+        <Icon name="gear" color="white" width={24} height={24} />
       </S.IconWrapper>
       <S.Menu active={isActive}>
         <S.MenuContent>
           <S.IconWrapper onClick={() => setIsActive(!isActive)}>
-            <Icon icon="close" color="white" width={24} height={24} />
+            <Icon name="close" color="white" width={24} height={24} />
           </S.IconWrapper>
           <S.MenuItems>
             <S.LargeMenuItem>
@@ -26,7 +26,7 @@ const Mobile = () => {
               >
                 Ver conta
                 <Icon
-                  icon="arrow-up-right"
+                  name="arrow-up-right"
                   color="white"
                   width={24}
                   height={24}

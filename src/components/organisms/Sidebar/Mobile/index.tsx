@@ -40,7 +40,7 @@ const Mobile = () => {
             key={item.id}
             text={item.text}
             link={item.link}
-            icon={item.icon}
+            name={item.icon}
           />
         ))}
       </S.Items>
